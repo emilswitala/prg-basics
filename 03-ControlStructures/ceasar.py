@@ -21,5 +21,4 @@ for char in plain_text:
         encrypted_text += char
     
 
-print(plain_text)
-print(encrypted_text)
+print(f'Encrypted message: {encrypted_text}')
