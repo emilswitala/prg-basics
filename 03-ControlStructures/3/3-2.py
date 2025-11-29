@@ -1,8 +1,8 @@
 ###
 # Checking login and password
 #
-login = input('Please enter your login: ')
-password = input('Please enter your password: ')
+login = "joe"
+password = "twujstary"
 
 entered_login = input('Repeat login: ')
 entered_password = input('Repeat password: ')

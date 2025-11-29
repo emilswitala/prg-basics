@@ -3,4 +3,4 @@ for i in range(2,5):
 
 city = 'Krakow'
 for char in city:
-    print(char)
+    print(char, end=" ")
