@@ -8,7 +8,7 @@
 # 6 13 20 27 34 41 48
 # 7 14 21 28 35 42 49
 
-for i in range(1, 8):
-    for j in range(7):
-        print(f'{i+j*7}',end=' ')
+for i in range(1,7):
+    for j in range(0,44,7):
+        print(f"{i+j}", end= " ")
     print()
