@@ -11,3 +11,6 @@ print("The natural logarithm of 5 is", logarithm)
 
 sine = math.sin(math.radians(90))
 print("Sine of 90 degrees is", sine)
+
+sine1 = math.sin(90)
+print("Sine of 90 degrees is ", sine1)
