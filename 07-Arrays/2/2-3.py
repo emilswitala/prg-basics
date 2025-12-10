@@ -14,7 +14,7 @@ for week in monthly_expenses:
     for i in range(len(week)):
         category_totals[i] += week[i]
 
-weekly_totals =[]
+weekly_totals = []
 for week in monthly_expenses:
     weekly_totals.append(sum(week))
 
