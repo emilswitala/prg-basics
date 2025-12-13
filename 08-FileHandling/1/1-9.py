@@ -7,12 +7,12 @@ file_name = 'it_company.csv'
 
 
 # Position
-job_title = 'Software Engineer'
 
-i = 1
+
 with open(file_name, 'r') as csvfile:
    content = csv.reader(csvfile, delimiter=',')
+   i = 1
    for line in content:
-      if job_title in line:
+      if 'Software Engineer' in line:
          print(f'{i}.', line)
          i += 1

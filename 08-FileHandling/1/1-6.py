@@ -14,5 +14,7 @@ file_content = read_from_file('countries.txt')
 file_lines = file_content.splitlines()
 sort_file_names = sorted(file_lines)
 # prints the array
+i = 1
 for line in sort_file_names:
-   print(line)
+   print(f'{i}.', line)
+   i += 1
