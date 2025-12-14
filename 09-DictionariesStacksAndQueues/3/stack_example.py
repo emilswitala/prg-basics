@@ -1,3 +1,5 @@
+
+
 import queue
 
 """
@@ -29,3 +31,36 @@ while not cards.empty():
 Note the order of the printed elements.
 The last added element is printed first.
 """
+# Put 2 on the stack
+# Put 3 on the stack
+# Put 7 on the stack
+# Put 4 on the stack
+# Put 1 on the stack
+# Put 9 on the stack
+# Put 8 on the stack
+# Sum the last two numbers of the stack and print result
+# Calculate the sum of the remaining stack elements and print the result. Use a 'while' loop.
+
+stack = queue.LifoQueue()
+
+stack.put(2)
+stack.put(3)
+stack.put(7)
+stack.put(4)
+stack.put(1)
+stack.put(9)
+stack.put(8)
+print('Number of stack elements:', stack.qsize())
+
+last = stack.get()
+second_to_last = stack.get()
+sum = last + second_to_last
+print("Sum is", sum)
+
+total = 0
+while not stack.empty():
+    number = stack.get()
+    total += number
+print('The total is', total)
+
+print("So at first the total was:", total+sum)

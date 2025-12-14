@@ -1,8 +1,10 @@
+# A back.py program simulates the Back key in a web browser 
+# (recording the name of new website or displaying 
+# the previously visited web site). 
+# Complete the program.
 import queue
-
 # create a visited_websites
-visited_websites = queue.LifoQueue()
-
+visited_websites = queue.LifoQueue() # so this is a stack, the last website in is the first to go
 # some previously visited websites
 visited_websites.put('instagram.com')
 visited_websites.put('uek.krakow.pl')
@@ -16,9 +18,9 @@ while True:
          break
       else:
          print('<-- Going back to a previously visited website')
-         website = ...
-   elif ... != "":
-      ...
+         website = visited_websites.get()
+   elif website != "":
+      visited_websites.put(website)
 
    # print name of website you are currently viewing
    print('You are currently viewing:', website)
