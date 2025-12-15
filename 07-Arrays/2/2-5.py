@@ -11,7 +11,7 @@ cinema_seats = [
 def seats_total(seats):
    total = 0
    for row in cinema_seats:
-      total += len(seats)
+      total += len(row)
    return total
 
 def seats_available(seats):

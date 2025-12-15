@@ -6,7 +6,7 @@
 arr = [34, 7, 19, 4, 21, 8]
 
 i = 0
-while i in range(0, len(arr)):
+for i in range(len(arr)):
     if arr[i] % 2 == 0:
         print(arr[i], end= " ")
     i += 1

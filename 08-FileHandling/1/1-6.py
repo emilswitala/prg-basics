@@ -7,7 +7,7 @@ def read_from_file(name):
    return content
 
 # reads the entire file
-file_content = read_from_file('countries.txt')
+file_content = read_from_file('pets.txt')
 
 # splits the entire file contents into lines
 # and stores them in an array
