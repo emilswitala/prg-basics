@@ -13,14 +13,14 @@ def brackets_ok(expression):
         ']': '['
     }
 
-    for char in expression: # analyzes every chracter in expression
+    for char in expression: # analyzes every character in expression
         if char in '({[': # catches the opening brackets
             stack.put(char) # puts opening bracket on the stack
         elif char in ')}]': # catches the closing brackets
             if stack.empty(): # if the stack is empty, there is no opening bracket for the closing one
                 return False # so brackets are not ok
-            right = stack.get() # gets the last opening bracket from the stack (first to be closed)
-            if right != pairs[char]: # if the opening bracket does not match the closing one
+            left = stack.get() # gets the last opening bracket from the stack (first to be closed)
+            if left != pairs[char]: # if the opening bracket does not match the closing one
                 return False # brackets are not ok
     return stack.empty() # if the stack's empty all brackets have been closed properly
 #True if brackets in expression are ok of False otherwise
