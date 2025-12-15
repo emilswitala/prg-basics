@@ -3,7 +3,7 @@ import re
 def email_sender(email_text):
     for line in email_text.splitlines():
         if line.startswith("From:"):
-            match = re.search(r'<([^>]+)', line)
+            match = re.search(r'<([^>]+)>', line)
             if match:
                 return match.group(1)
     return None
